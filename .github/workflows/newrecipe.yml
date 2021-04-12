@@ -12,8 +12,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: nanasess/setup-php@master
       - run:  php rezeptcreator.php 
-      - uses: crazy-max/ghaction-github-pages@v2.3.0
-        if: success()
+      - if: success()
+        uses: crazy-max/ghaction-github-pages@v2.3.0
         with:
           target_branch: gh-pages
           build_dir: .
