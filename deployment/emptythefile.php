@@ -2,17 +2,17 @@
 
 $content = "";
 
-$prefixDeploymentFolder = "deployment/";
 
-$allrecipes=  $prefixDeploymentFolder."allrecipes.html";
+
+$allrecipes=  "allrecipes.html";
 file_put_contents ($allrecipes, $content);
 
-file_put_contents ($prefixDeploymentFolder."backenrecipes.html", "");
-file_put_contents ($prefixDeploymentFolder."fleischrecipes.html", "");
-file_put_contents ($prefixDeploymentFolder."fischrecipes.html", "");
-file_put_contents ($prefixDeploymentFolder."snacksrecipes.html", "");
-file_put_contents ($prefixDeploymentFolder."spicyrecipes.html", "");
-file_put_contents ($prefixDeploymentFolder."vegetarischrecipes.html", "");
+file_put_contents ("backenrecipes.html", "");
+file_put_contents ("fleischrecipes.html", "");
+file_put_contents ("fischrecipes.html", "");
+file_put_contents ("snacksrecipes.html", "");
+file_put_contents ("spicyrecipes.html", "");
+file_put_contents ("vegetarischrecipes.html", "");
 
 /*									// Funktion wieder einführen!					
 $neuesRezept = file_get_contents ("Rezepte/neuesRezept.json");

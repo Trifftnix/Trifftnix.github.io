@@ -50,40 +50,39 @@ if ($Rezeptname != "") {
 
 	$allrecipes= $allrecipes.$neueRezeptzeile;
 
-	$fileprefixold = "";
-	$fileprefix = "../"; 							//beim texten mit xampp brauche ich kein Präfix!!!!
-	file_put_contents ($fileprefixold."allrecipes.html", $allrecipes);
+	
+	file_put_contents ("allrecipes.html", $allrecipes);
 	$Rezeptkategorie = $neueVariablen->recipeCategory;
 	
 	if ($Rezeptkategorie == "Backen") {
-		$backenrecipes= file_get_contents($fileprefixold."backenrecipes.html");
+		$backenrecipes= file_get_contents("backenrecipes.html");
 		$backenrecipes= $backenrecipes.$neueRezeptzeile;
-		file_put_contents ($fileprefixold."backenrecipes.html", $backenrecipes);
+		file_put_contents ("backenrecipes.html", $backenrecipes);
 	}
 	if ($Rezeptkategorie == "Fleisch") {
-		$fleischrecipes= file_get_contents($fileprefixold."fleischrecipes.html");
+		$fleischrecipes= file_get_contents("fleischrecipes.html");
 		$fleischrecipes= $fleischrecipes.$neueRezeptzeile;
-		file_put_contents ($fileprefixold."fleischrecipes.html", $fleischrecipes);
+		file_put_contents ("fleischrecipes.html", $fleischrecipes);
 	}
 	if ($Rezeptkategorie == "Fisch") {
-		$fischrecipes= file_get_contents($fileprefixold."fischrecipes.html");
+		$fischrecipes= file_get_contents("fischrecipes.html");
 		$fischrecipes= $fischrecipes.$neueRezeptzeile;
-		file_put_contents ($fileprefixold."fischrecipes.html", $fischrecipes);
+		file_put_contents ("fischrecipes.html", $fischrecipes);
 	}
 	if ($Rezeptkategorie == "Snacks") {
-		$snacksrecipes= file_get_contents($fileprefixold."snacksrecipes.html");
+		$snacksrecipes= file_get_contents("snacksrecipes.html");
 		$snacksrecipes= $snacksrecipes.$neueRezeptzeile;
-		file_put_contents ($fileprefixold."snacksrecipes.html", $snacksrecipes);
+		file_put_contents ("snacksrecipes.html", $snacksrecipes);
 	}
 	if ($Rezeptkategorie == "Spicy") {
-		$spicyrecipes= file_get_contents($fileprefixold."spicyrecipes.html");
+		$spicyrecipes= file_get_contents("spicyrecipes.html");
 		$spicyrecipes= $spicyrecipes.$neueRezeptzeile;
-		file_put_contents ($fileprefixold."spicyrecipes.html", $spicyrecipes);
+		file_put_contents ("spicyrecipes.html", $spicyrecipes);
 	}
 	if ($Rezeptkategorie == "Vegetarisch") {
-		$vegetarischrecipes= file_get_contents($fileprefixold."vegetarischrecipes.html");
+		$vegetarischrecipes= file_get_contents("vegetarischrecipes.html");
 		$vegetarischrecipes= $vegetarischrecipes.$neueRezeptzeile;
-		file_put_contents ($fileprefixold."vegetarischrecipes.html", $vegetarischrecipes);
+		file_put_contents ("vegetarischrecipes.html", $vegetarischrecipes);
 	}
 }
 ?>

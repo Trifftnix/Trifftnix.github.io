@@ -1,80 +1,77 @@
 <?php
 
-$deploymentprefix2 = "";
-$prefixDeploymentFolder = "deployment/";
 
-
-$allrecipes = file_get_contents($prefixDeploymentFolder."allrecipes.html");
+$allrecipes = file_get_contents("allrecipes.html");
 ob_start();
-include $prefixDeploymentFolder.'indextemplate.php';
+include 'indextemplate.php';
 $content = ob_get_contents();
-$template=  $deploymentprefix2."index.html";
+$template=  "index.html";
 file_put_contents ($template, $content);
 ob_end_clean();	
 $content = "";	
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($prefixDeploymentFolder."snacksrecipes.html");
+$allrecipes = file_get_contents("snacksrecipes.html");
 ob_start();
-include $prefixDeploymentFolder.'indextemplate.php';
+include 'indextemplate.php';
 $content = ob_get_contents();
-$template=  $deploymentprefix2."indexsnacks.html";
+$template=  "indexsnacks.html";
 file_put_contents ($template, $content);
 ob_end_clean();	
 $content = "";
 $allrecipes ="";
 	
 
-$allrecipes = file_get_contents($prefixDeploymentFolder."backenrecipes.html");
+$allrecipes = file_get_contents("backenrecipes.html");
 ob_start();
-include $prefixDeploymentFolder.'indextemplate.php';
+include 'indextemplate.php';
 $content = ob_get_contents();
-$template=  $deploymentprefix2."indexbacken.html";
+$template=  "indexbacken.html";
 file_put_contents ($template, $content);
 ob_end_clean();	
 $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($prefixDeploymentFolder."fleischrecipes.html");
+$allrecipes = file_get_contents("fleischrecipes.html");
 ob_start();
-include $prefixDeploymentFolder.'indextemplate.php';
+include 'indextemplate.php';
 $content = ob_get_contents();
-$template=  $deploymentprefix2."indexfleisch.html";
+$template=  "indexfleisch.html";
 file_put_contents ($template, $content);
 ob_end_clean();	
 $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($prefixDeploymentFolder."fischrecipes.html");
+$allrecipes = file_get_contents("fischrecipes.html");
 ob_start();
-include $prefixDeploymentFolder.'indextemplate.php';
+include 'indextemplate.php';
 $content = ob_get_contents();
-$template=  $deploymentprefix2."indexfisch.html";
+$template=  "indexfisch.html";
 file_put_contents ($template, $content);
 ob_end_clean();	
 $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($prefixDeploymentFolder."spicyrecipes.html");
+$allrecipes = file_get_contents("spicyrecipes.html");
 ob_start();
-include $prefixDeploymentFolder.'indextemplate.php';
+include 'indextemplate.php';
 $content = ob_get_contents();
-$template=  $deploymentprefix2."indexspicy.html";
+$template=  "indexspicy.html";
 file_put_contents ($template, $content);
 ob_end_clean();	
 $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($prefixDeploymentFolder."vegetarischrecipes.html");
+$allrecipes = file_get_contents("vegetarischrecipes.html");
 ob_start();
-include $prefixDeploymentFolder.'indextemplate.php';
+include 'indextemplate.php';
 $content = ob_get_contents();
-$template=  $deploymentprefix2."indexvegetarisch.html";
+$template=  "indexvegetarisch.html";
 file_put_contents ($template, $content);
 ob_end_clean();	
 $content = "";	
