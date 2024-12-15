@@ -18,7 +18,7 @@ function searchFilesWithExtension($dir, $extension) {
 			//echo $filePath;
 			include "deployment/rezeptcreator2.php";
 			$neueVariablen = file_get_contents($filePath);
-			include "deployment/allrecipesintohtml.php";
+			include "allrecipesintohtml.php";
         }
     }
 }

@@ -51,6 +51,7 @@ if ($Rezeptname != "") {
 	$allrecipes= $allrecipes.$neueRezeptzeile;
 
 	$fileprefixold = "";
+	$fileprefix = "../"; 							//beim texten mit xampp brauche ich kein Präfix!!!!
 	file_put_contents ($fileprefixold."allrecipes.html", $allrecipes);
 	$Rezeptkategorie = $neueVariablen->recipeCategory;
 	

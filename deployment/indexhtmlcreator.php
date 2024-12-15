@@ -4,7 +4,7 @@ $deploymentprefix2 = "";
 $prefixDeploymentFolder = "deployment/";
 
 
-$allrecipes = file_get_contents($deploymentprefix2."allrecipes.html");
+$allrecipes = file_get_contents($prefixDeploymentFolder."allrecipes.html");
 ob_start();
 include $prefixDeploymentFolder.'indextemplate.php';
 $content = ob_get_contents();
@@ -15,7 +15,7 @@ $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($deploymentprefix2."snacksrecipes.html");
+$allrecipes = file_get_contents($prefixDeploymentFolder."snacksrecipes.html");
 ob_start();
 include $prefixDeploymentFolder.'indextemplate.php';
 $content = ob_get_contents();
@@ -26,7 +26,7 @@ $content = "";
 $allrecipes ="";
 	
 
-$allrecipes = file_get_contents($deploymentprefix2."backenrecipes.html");
+$allrecipes = file_get_contents($prefixDeploymentFolder."backenrecipes.html");
 ob_start();
 include $prefixDeploymentFolder.'indextemplate.php';
 $content = ob_get_contents();
@@ -37,7 +37,7 @@ $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($deploymentprefix2."fleischrecipes.html");
+$allrecipes = file_get_contents($prefixDeploymentFolder."fleischrecipes.html");
 ob_start();
 include $prefixDeploymentFolder.'indextemplate.php';
 $content = ob_get_contents();
@@ -48,7 +48,7 @@ $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($deploymentprefix2."fischrecipes.html");
+$allrecipes = file_get_contents($prefixDeploymentFolder."fischrecipes.html");
 ob_start();
 include $prefixDeploymentFolder.'indextemplate.php';
 $content = ob_get_contents();
@@ -59,7 +59,7 @@ $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($deploymentprefix2."spicyrecipes.html");
+$allrecipes = file_get_contents($prefixDeploymentFolder."spicyrecipes.html");
 ob_start();
 include $prefixDeploymentFolder.'indextemplate.php';
 $content = ob_get_contents();
@@ -70,7 +70,7 @@ $content = "";
 $allrecipes ="";
 
 
-$allrecipes = file_get_contents($deploymentprefix2."vegetarischrecipes.html");
+$allrecipes = file_get_contents($prefixDeploymentFolder."vegetarischrecipes.html");
 ob_start();
 include $prefixDeploymentFolder.'indextemplate.php';
 $content = ob_get_contents();
